@@ -1,101 +1,207 @@
+import Footer from "@/components/footer";
+import NavBar from "@/components/navbar";
+import { Roboto } from "next/font/google";
 import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMapPin, faDumbbell, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+
+const roboto = Roboto({
+  weight: ['100', '300', '400', '500', '700', '900'],
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div>
+      <NavBar />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      <div>
+        <Image
+          src={"/assets/cafe-3.jpg"}
+          height={383}
+          width={1440}
+          alt="Cafe"
+          quality={100}
+          layout="responsive"
+          className="bg-no-repeat w-full h-auto bg-cover bg-center"
+        />
+        <div className="absolute inset-0 flex items-center justify-center">
+          <h2 className={`${roboto.className} antialiased lg:text-[64px] sm:text-[48px] text-wrap text-white`}>Find a business, make <i>yours</i> known.</h2>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+
+      <div className="h-auto bg-[#C6D3BC] px-12 py-32">
+        <h1 className={`${roboto.className} antialiased text-[32px] mb-6`}>Go Digital</h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="flex justify-between gap-4 bg-[#ECF0E9] p-4 rounded-2xl">
+            <div className="flex flex-col gap-2">
+              <h3 className="text-[20px]">Find businesses faster</h3>
+              <p>Use our site to find businesses closest to you.</p>
+            </div>
+            <FontAwesomeIcon icon={faMapPin} className="text-[124px]" />
+          </div>
+          <div className="flex justify-between gap-4 bg-[#ECF0E9] p-4 rounded-2xl">
+            <div className="flex flex-col gap-2">
+              <h3 className="text-[20px]">Add your own</h3>
+              <p>Have your own hustle? Make it known!</p>
+            </div>
+            <FontAwesomeIcon icon={faDumbbell} className="text-[124px]" />
+          </div>
+          <div className="flex justify-between gap-4 bg-[#ECF0E9] p-4 rounded-2xl">
+            <div className="flex flex-col gap-2">
+              <h3 className="text-[20px]">Sort, categorize and rate</h3>
+              <p>Utilize our functionality to fine-tune your selection.</p>
+            </div>
+            <FontAwesomeIcon icon={faMagnifyingGlass} className="text-[124px]" />
+          </div>
+        </div>
+      </div>
+
+
+      <div className="h-auto bg-[#C6D3BC] p-12">
+        <h1 className="font-serif text-[24px] mb-4">Top trending businesses</h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          
+
+          <div className="max-w-sm bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+            {/* Business Logo */}
+            <img src='' alt='' className="w-24 h-24 mx-auto rounded-full mb-4 object-cover" />
+
+            {/* Business Name */}
+            <h1 className="text-2xl font-bold text-center text-gray-800 mb-2">ainsidnis</h1>
+
+            {/* Rating */}
+            <div className="text-yellow-500 text-center mb-2">
+              <span className="font-medium text-gray-700">Rating:</span> 4 ⭐
+            </div>
+
+            {/* Description */}
+            <p className="text-gray-600 text-center mb-4">sadnoadjsnojanjcdsakcnodsknc</p>
+
+            {/* Location */}
+            <h3 className="text-sm text-center font-semibold text-gray-700 mb-2">Kena</h3>
+
+            {/* Category */}
+            <em className="block text-center text-blue-500 font-semibold text-sm mb-4">Food</em>
+
+            {/* Contact Information */}
+            <div className="text-center text-gray-500 font-medium">
+              <h5>020320320</h5>
+            </div>
+          </div>
+
+          <div className="max-w-sm bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+            {/* Business Logo */}
+            <img src='' alt='' className="w-24 h-24 mx-auto rounded-full mb-4 object-cover" />
+
+            {/* Business Name */}
+            <h1 className="text-2xl font-bold text-center text-gray-800 mb-2">ainsidnis</h1>
+
+            {/* Rating */}
+            <div className="text-yellow-500 text-center mb-2">
+              <span className="font-medium text-gray-700">Rating:</span> 4 ⭐
+            </div>
+
+            {/* Description */}
+            <p className="text-gray-600 text-center mb-4">sadnoadjsnojanjcdsakcnodsknc</p>
+
+            {/* Location */}
+            <h3 className="text-sm text-center font-semibold text-gray-700 mb-2">Kena</h3>
+
+            {/* Category */}
+            <em className="block text-center text-blue-500 font-semibold text-sm mb-4">Food</em>
+
+            {/* Contact Information */}
+            <div className="text-center text-gray-500 font-medium">
+              <h5>020320320</h5>
+            </div>
+          </div>
+
+          <div className="max-w-sm bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+            {/* Business Logo */}
+            <img src='' alt='' className="w-24 h-24 mx-auto rounded-full mb-4 object-cover" />
+
+            {/* Business Name */}
+            <h1 className="text-2xl font-bold text-center text-gray-800 mb-2">ainsidnis</h1>
+
+            {/* Rating */}
+            <div className="text-yellow-500 text-center mb-2">
+              <span className="font-medium text-gray-700">Rating:</span> 4 ⭐
+            </div>
+
+            {/* Description */}
+            <p className="text-gray-600 text-center mb-4">sadnoadjsnojanjcdsakcnodsknc</p>
+
+            {/* Location */}
+            <h3 className="text-sm text-center font-semibold text-gray-700 mb-2">Kena</h3>
+
+            {/* Category */}
+            <em className="block text-center text-blue-500 font-semibold text-sm mb-4">Food</em>
+
+            {/* Contact Information */}
+            <div className="text-center text-gray-500 font-medium">
+              <h5>020320320</h5>
+            </div>
+          </div>
+
+          <div className="max-w-sm bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+            {/* Business Logo */}
+            <img src='' alt='' className="w-24 h-24 mx-auto rounded-full mb-4 object-cover" />
+
+            {/* Business Name */}
+            <h1 className="text-2xl font-bold text-center text-gray-800 mb-2">ainsidnis</h1>
+
+            {/* Rating */}
+            <div className="text-yellow-500 text-center mb-2">
+              <span className="font-medium text-gray-700">Rating:</span> 4 ⭐
+            </div>
+
+            {/* Description */}
+            <p className="text-gray-600 text-center mb-4">sadnoadjsnojanjcdsakcnodsknc</p>
+
+            {/* Location */}
+            <h3 className="text-sm text-center font-semibold text-gray-700 mb-2">Kena</h3>
+
+            {/* Category */}
+            <em className="block text-center text-blue-500 font-semibold text-sm mb-4">Food</em>
+
+            {/* Contact Information */}
+            <div className="text-center text-gray-500 font-medium">
+              <h5>020320320</h5>
+            </div>
+          </div>
+
+          <div className="max-w-sm bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+            {/* Business Logo */}
+            <img src='' alt='' className="w-24 h-24 mx-auto rounded-full mb-4 object-cover" />
+
+            {/* Business Name */}
+            <h1 className="text-2xl font-bold text-center text-gray-800 mb-2">ainsidnis</h1>
+
+            {/* Rating */}
+            <div className="text-yellow-500 text-center mb-2">
+              <span className="font-medium text-gray-700">Rating:</span> 4 ⭐
+            </div>
+
+            {/* Description */}
+            <p className="text-gray-600 text-center mb-4">sadnoadjsnojanjcdsakcnodsknc</p>
+
+            {/* Location */}
+            <h3 className="text-sm text-center font-semibold text-gray-700 mb-2">Kena</h3>
+
+            {/* Category */}
+            <em className="block text-center text-blue-500 font-semibold text-sm mb-4">Food</em>
+
+            {/* Contact Information */}
+            <div className="text-center text-gray-500 font-medium">
+              <h5>020320320</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <Footer />
     </div>
   );
 }
