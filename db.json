@@ -3,7 +3,7 @@
       {
         "id": 1,
         "name": "Nairobi Bites",
-        "logo": "https://example.com/nairobibites-logo.png",
+        "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731466270/food-and-drink-logo-plate-with-wine-glass-vector-33655938_xux3wa.jpg",
         "rating": 4,
         "description": "Popular eatery offering local and international cuisine.",
         "location": "Nairobi",
@@ -13,7 +13,7 @@
       {
         "id": 2,
         "name": "Mombasa Transport Hub",
-        "logo": "https://example.com/mtransport-logo.png",
+        "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731466125/ccbc1e62c7108c465a74efdc2496defa_tvn6ey.jpg",
         "rating": 5,
         "description": "Reliable taxi and shuttle services around Mombasa.",
         "location": "Mombasa",
@@ -23,7 +23,7 @@
       {
         "id": 3,
         "name": "Eldoret Mart",
-        "logo": "https://example.com/eldoretmart-logo.png",
+        "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731466127/shop-local-small-business-logo-icon-buy-support-community-216170697_uwuqna.jpg",
         "rating": 4,
         "description": "Your go-to spot for household essentials and electronics.",
         "location": "Eldoret",
@@ -33,7 +33,7 @@
       {
         "id": 4,
         "name": "Kisumu Kicks",
-        "logo": "https://example.com/kisumukicks-logo.png",
+        "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731466182/clothing-store-logo-design-inspiration-600nw-2104754999_wwghdu.jpg",
         "rating": 3,
         "description": "Trendy apparel and footwear for all ages.",
         "location": "Kisumu",
@@ -43,7 +43,7 @@
       {
         "id": 5,
         "name": "Nakuru Nibbles",
-        "logo": "https://example.com/nakurunibbles-logo.png",
+        "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731466271/food-and-beverage-logo-template-design-231dbfe52a8f511a7e1c4fae296e8fb7_screen_mkcg4s.jpg",
         "rating": 5,
         "description": "Delicious snacks and beverages in the heart of Nakuru.",
         "location": "Nakuru",
@@ -53,7 +53,7 @@
       {
         "id": 6,
         "name": "Thika Fashion",
-        "logo": "https://example.com/thikafashion-logo.png",
+        "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731466183/clothing-logo-design-women-boutique-logo-vector_y7kx2x.jpg",
         "rating": 4,
         "description": "Modern fashion store with unique apparel collections.",
         "location": "Thika",
@@ -63,7 +63,7 @@
       {
         "id": 7,
         "name": "Meru Fresh Mart",
-        "logo": "https://example.com/merufreshmart-logo.png",
+        "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731466126/wdecal_bizreopen_06_white_yzc94x.png",
         "rating": 3,
         "description": "Fresh produce and groceries for every household.",
         "location": "Meru",
@@ -73,7 +73,7 @@
       {
         "id": 8,
         "name": "Naivasha Travel",
-        "logo": "https://example.com/naivashatravel-logo.png",
+        "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731466750/black-white-transportation-icon-illustration-logo-vector_sliivf.jpg",
         "rating": 5,
         "description": "Quality transport services for tourists and locals.",
         "location": "Naivasha",
@@ -83,7 +83,7 @@
       {
         "id": 9,
         "name": "Embu Eatery",
-        "logo": "https://example.com/embueatery-logo.png",
+        "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731466272/meal-breaks-vector-line-icon-simple-thin-line-icon-premium-quality-design-element_ondqhy.jpg",
         "rating": 4,
         "description": "Friendly cafe with local and continental dishes.",
         "location": "Embu",
@@ -93,7 +93,7 @@
       {
         "id": 10,
         "name": "Kitale Clothing Co.",
-        "logo": "https://example.com/kitaleclothing-logo.png",
+        "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731466182/clothing-store-logo-design-inspiration-600nw-2104754999_wwghdu.jpg",
         "rating": 3,
         "description": "Stylish clothing for men, women, and children.",
         "location": "Kitale",
@@ -103,7 +103,7 @@
       {
         "id": 11,
         "name": "Kericho Essentials",
-        "logo": "https://example.com/kerichoessentials-logo.png",
+        "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731466127/shop-local-small-business-logo-icon-buy-support-community-216170697_uwuqna.jpg",
         "rating": 4,
         "description": "General store with everything you need.",
         "location": "Kericho",
@@ -113,7 +113,7 @@
       {
         "id": 12,
         "name": "Nanyuki Logistics",
-        "logo": "https://example.com/nanyukilogistics-logo.png",
+        "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731466750/minimalist-logistics-transportation-logo-vector-modern-stylish-design-high-resolution_1273060-16_j5ob2t.jpg",
         "rating": 5,
         "description": "Efficient transport services for urban and rural routes.",
         "location": "Nanyuki",
@@ -123,7 +123,7 @@
       {
         "id": 13,
         "name": "Machakos Deli",
-        "logo": "https://example.com/machakosdeli-logo.png",
+        "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731466273/food-beverage_gwdthx.png",
         "rating": 4,
         "description": "Charming deli with a range of tasty foods and beverages.",
         "location": "Machakos",
@@ -133,7 +133,7 @@
       {
         "id": 14,
         "name": "Voi Outfitters",
-        "logo": "https://example.com/voioutfitters-logo.png",
+        "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731466183/clothing-logo-design-women-boutique-logo-vector_y7kx2x.jpg",
         "rating": 5,
         "description": "High-quality apparel for every occasion.",
         "location": "Voi",
@@ -143,7 +143,7 @@
       {
         "id": 15,
         "name": "Malindi Mini Mart",
-        "logo": "https://example.com/malindiminimart-logo.png",
+        "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731466126/wdecal_bizreopen_06_white_yzc94x.png",
         "rating": 3,
         "description": "Convenient store with essentials and household items.",
         "location": "Malindi",
@@ -152,3 +152,4 @@
       }
     ]
   }
+  
