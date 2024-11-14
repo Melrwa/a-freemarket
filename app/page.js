@@ -80,7 +80,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="h-auto bg-[#C6D3BC] p-12">
+      <div className="text-black h-auto bg-[#C6D3BC] p-12">
         <h1 className="font-serif text-[24px] mb-4">
           Top trending businesses:{" "}
           <Link href="/businesses" className="hover:bg-[#336633] hover:rounded-[12px] hover:text-white p-2 transition-all text-[20px]">
