@@ -52,8 +52,8 @@ export default function Home() {
         </div>
       </div>
 
-      
-      <div className="h-auto bg-[#C6D3BC] px-12 py-32">
+
+      <div className="text-black h-auto bg-[#C6D3BC] px-12 py-32">
         <h1 className={`${roboto.className} antialiased text-[32px] mb-6`}>Go Digital</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="flex justify-between gap-4 bg-[#ECF0E9] p-4 rounded-2xl">
@@ -80,19 +80,19 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="h-auto bg-[#C6D3BC] p-12">
+      <div className="text-black h-auto bg-[#C6D3BC] p-12">
         <h1 className="font-serif text-[24px] mb-4">
           Top trending businesses:{" "}
           <Link href="/businesses" className="hover:bg-[#336633] hover:rounded-[12px] hover:text-white p-2 transition-all text-[20px]">
             See more
           </Link>
         </h1>
-        
+
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
        { businesses.map((business) => ( <BusinessCard key={business.id} business={business}/>))}
 
         </div>
-       
+
       </div>
 
       <Footer />
