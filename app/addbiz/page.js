@@ -1,9 +1,11 @@
-import AddBusiness from "./addbusinesses/Form";
+import AddBusiness from "../components/Form";
+import NavBar from "../components/navbar";
 
 export default function Home() {
   return (
     <div >
- <AddBusiness />
+      <NavBar />
+      <AddBusiness />
     </div>
   );
 }
