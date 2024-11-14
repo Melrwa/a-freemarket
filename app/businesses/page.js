@@ -1,4 +1,4 @@
-import BusinessesList from "./Businesses/BusinessList";
+import BusinessesList from "../components/BusinessList";
 
 
 export default function Home() {
@@ -12,3 +12,4 @@ export default function Home() {
     </>
   );
 }
+

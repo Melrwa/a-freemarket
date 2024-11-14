@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import FiveRatingIcon from "../fonts/FiveRatingIcon";
+import FiveRatingIcon from "./FiveRatingIcon";
 
 export default function BusinessCard({ business, onDeleteBusiness }) {
   return (
