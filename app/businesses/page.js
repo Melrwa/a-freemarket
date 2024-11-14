@@ -1,5 +1,6 @@
+
 import BusinessesList from "@/components/BusinessList";
-import NavBar from "@/components/navbar";
+import NavBar from "@/app/components/navbar";
 
 
 export default function Home() {

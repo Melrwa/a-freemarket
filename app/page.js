@@ -1,10 +1,11 @@
-import Footer from "@/components/footer";
-import NavBar from "@/components/navbar";
+import Footer from "@/app/components/footer";
+import NavBar from "@/app/components/navbar";
 import { Roboto } from "next/font/google";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapPin, faDumbbell, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
+
 
 const roboto = Roboto({
   weight: ['100', '300', '400', '500', '700', '900'],
