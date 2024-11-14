@@ -53,7 +53,7 @@ export default function BusinessesList() {
 
   return (
     <>
-      <div className="bg-green-50">
+      <div className="bg-[#C6D3BC]">
         <Toolbar
           searchQuery={searchQuery}
           setSearchQuery={setSearchQuery}

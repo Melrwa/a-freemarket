@@ -17,9 +17,9 @@ export default function NavBar() {
                     </h1>
                 </div>
                 <div className="ml-auto flex gap-4 lg:gap-8 items-center text-[14px] lg:text-[16px]">
-                    <Link href="/" className="hover:bg-[#336633] hover:rounded-[12px] hover:text-white p-2 transition-all">Home</Link>
-                    <Link href="/businesses" className="hover:bg-[#336633] hover:rounded-[12px] hover:text-white p-2 transition-all">Businesses</Link>
-                    <Link href="/addbiz" className="hover:bg-[#336633] hover:rounded-[12px] hover:text-white p-2 transition-all">Add a business</Link>
+                    <Link href="/" className="hover:bg-[#336633] hover:rounded-[12px] hover:text-white p-2 transition-all text-black">Home</Link>
+                    <Link href="/businesses" className="hover:bg-[#336633] hover:rounded-[12px] hover:text-white p-2 transition-all text-black">Businesses</Link>
+                    <Link href="/addbiz" className="hover:bg-[#336633] hover:rounded-[12px] hover:text-white p-2 transition-all text-black">Add a business</Link>
                     <button className="bg-[#336633] px-4 lg:px-8 py-1 rounded-lg text-white hover:bg-[#ECF0E9] hover:rounded-[10px] hover:text-black hover:border hover:border-black transition-all">
                         Sign Up/Login
                     </button>

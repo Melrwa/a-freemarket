@@ -34,23 +34,23 @@ export default function Home() {
       </div>
 
       <div className="h-auto bg-[#C6D3BC] px-12 py-32">
-        <h1 className={`${roboto.className} antialiased text-[32px] mb-6`}>Go Digital</h1>
+        <h1 className={`${roboto.className} antialiased text-[32px] mb-6  text-black`}>Go Digital</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="flex justify-between gap-4 bg-[#ECF0E9] p-4 rounded-2xl">
-            <div className="flex flex-col gap-2">
+          <div className="flex justify-between gap-4 bg-[#ECF0E9] p-4 rounded-2xl  text-black">
+            <div className="flex flex-col gap-2  text-black">
               <h3 className="text-[20px]">Find businesses faster</h3>
               <p>Use our site to find businesses closest to you.</p>
             </div>
             <FontAwesomeIcon icon={faMapPin} className="text-[124px]" />
           </div>
-          <div className="flex justify-between gap-4 bg-[#ECF0E9] p-4 rounded-2xl">
+          <div className="flex justify-between gap-4 bg-[#ECF0E9] p-4 rounded-2xl  text-black">
             <div className="flex flex-col gap-2">
               <h3 className="text-[20px]">Add your own</h3>
               <p>Have your own hustle? Make it known!</p>
             </div>
             <FontAwesomeIcon icon={faDumbbell} className="text-[124px]" />
           </div>
-          <div className="flex justify-between gap-4 bg-[#ECF0E9] p-4 rounded-2xl">
+          <div className="flex justify-between gap-4 bg-[#ECF0E9] p-4 rounded-2xl text-black">
             <div className="flex flex-col gap-2">
               <h3 className="text-[20px]">Sort, categorize and rate</h3>
               <p>Utilize our functionality to fine-tune your selection.</p>
@@ -62,7 +62,7 @@ export default function Home() {
 
 
       <div className="h-auto bg-[#C6D3BC] p-12">
-        <h1 className="font-serif text-[24px] mb-4">Top trending businesses: <Link href="/businesses" className="hover:bg-[#336633] hover:rounded-[12px] hover:text-white p-2 transition-all text-[20px]">See more</Link>
+        <h1 className="font-serif text-[24px] mb-4  text-black">Top trending businesses: <Link href="/businesses" className="hover:bg-[#336633] hover:rounded-[12px] hover:text-white p-2 transition-all text-[20px]  text-black">See more</Link>
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 
