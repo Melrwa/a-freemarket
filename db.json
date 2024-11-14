@@ -45,7 +45,15 @@
         5,
         3,
         3,
-        5
+        5,
+        3,
+        3,
+        3,
+        5,
+        3,
+        4,
+        3,
+        3
       ],
       "averageRating": 4,
       "description": "Your go-to spot for household essentials and electronics.",
@@ -172,8 +180,7 @@
         4,
         3,
         4,
-        1,
-        4
+        1
       ],
       "averageRating": 3,
       "description": "Fresh produce and groceries for every household.",
@@ -202,8 +209,7 @@
       "ratings": [
         3,
         1,
-        5,
-        4
+        5
       ],
       "averageRating": 3,
       "description": "Quality transport services for tourists and locals.",

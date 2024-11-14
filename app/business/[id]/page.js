@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import FiveSegmentRating from '@/app/components/FiveRatingIcon';
 
 
 // Await the params using `use` if needed in Next.js 13+
@@ -32,10 +33,17 @@ export default function BusinessDetailsPage({ params: initialParams }) {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-green-100 via-white to-green-50 p-6">
       <div className="relative w-full max-w-3xl bg-white border border-gray-200 shadow-lg rounded-xl p-8 transform transition-all duration-500 hover:scale-105 ease-in-out">
+        {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center rounded-xl z-0"
           style={{ backgroundImage: `url(${business.backgroundImage})` }}
         />
+  
+        {/* Rating Component positioned at the top-right corner */}
+        <div className="absolute top-4 left-10 z-20">
+          <FiveSegmentRating rating={business.rating} businessId={business.id} />
+        </div>
+  
         <div className="relative z-10 text-center p-6 bg-white bg-opacity-90 rounded-lg shadow-md">
           <img
             src={business.logo}
@@ -49,7 +57,7 @@ export default function BusinessDetailsPage({ params: initialParams }) {
             <h3 className="text-xl font-semibold text-green-800 mb-2">Location: {business.location}</h3>
             <h3 className="text-xl font-semibold text-green-800 mb-2">Category: {business.category}</h3>
           </div>
-
+  
           <div className="bg-green-50 p-6 rounded-lg shadow-inner mb-4">
             <h3 className="text-lg font-semibold text-green-900 mb-2">Services Offered:</h3>
             <ul className="list-disc list-inside text-gray-700">
@@ -58,19 +66,29 @@ export default function BusinessDetailsPage({ params: initialParams }) {
               ))}
             </ul>
           </div>
-
+  
           <div className="text-center mt-6">
-            <p className="text-gray-700 italic text-lg">{business.promotionalMessage}</p>
+            <p className="text-red-600 font-semibold text-lg mb-4">{business.promotionalMessage}</p>
           </div>
-
+  
+          {/* Footer Section with Contacts */}
+          <div className="mt-6 p-4 bg-green-100 rounded-lg shadow-inner text-gray-800">
+            <h3 className="text-lg font-semibold mb-2">Contact Information</h3>
+            <p className="text-md">Phone: {business.contact}</p>
+            <p className="text-md">Email: {business.contact.email}</p>
+            <p className="text-md">Website: {business.contact.website}</p>
+          </div>
+  
           {/* Return Button */}
-          <Link href="/" passHref>
-            <button className="mt-6 bg-green-500 text-white font-semibold px-6 py-2 rounded-md hover:bg-green-600 transition-colors">
-              BACK
-            </button>
-          </Link>
+          <div className="text-center mt-6">
+            <Link href="/" passHref>
+              <button className="bg-green-500 text-white font-semibold px-6 py-2 rounded-md hover:bg-green-600 transition-colors">
+                BACK
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
   );
-}
+};  
