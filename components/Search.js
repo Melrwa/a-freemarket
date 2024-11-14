@@ -1,6 +1,6 @@
 export default function Search({ searchQuery, setSearchQuery }) {
   return (
-    <div className="bg-green-50 w-full py-4 px-8 shadow-lg flex justify-center">
+    <div className="bg-[#C6D3BC] w-full py-4 px-8 shadow-lg flex justify-center mt-[64px]">
       <input
         type="text"
         placeholder="Search businesses..."

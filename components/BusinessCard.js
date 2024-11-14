@@ -1,4 +1,4 @@
-import FiveRatingIcon from "../fonts/FiveRatingIcon";
+import FiveRatingIcon from "./FiveRatingIcon";
 
 export default function BusinessCard({ Businessname, logo, rating, description, location, category, contact }) {
   return (

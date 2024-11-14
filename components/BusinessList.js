@@ -41,7 +41,7 @@ import Toolbar from "./ToolBar";
     return(
 <>
       {/* Apply the background color to the outermost div */}
-      <div className="bg-green-50"> {/* This is where the consistent background color is applied */}
+      <div className="bg-[#C6D3BC]"> {/* This is where the consistent background color is applied */}
         {/* Toolbar section */}
         <Toolbar
           searchQuery={searchQuery}
