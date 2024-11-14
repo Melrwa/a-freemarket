@@ -1,4 +1,4 @@
-import AddBusiness from "./addbusinesses/Form";
+import AddBusiness from "../components/Form";
 
 export default function Home() {
   return (
