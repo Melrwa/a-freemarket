@@ -1,154 +1,157 @@
 {
-    "businesses": [
-      {
-        "id": 1,
-        "name": "Nairobi Bites",
-        "logo": "https://example.com/nairobibites-logo.png",
-        "rating": 4,
-        "description": "Popular eatery offering local and international cuisine.",
-        "location": "Nairobi",
-        "category": "Food and Beverages",
-        "contact": "0721000001"
-      },
-      {
-        "id": 2,
-        "name": "Mombasa Transport Hub",
-        "logo": "https://example.com/mtransport-logo.png",
-        "rating": 5,
-        "description": "Reliable taxi and shuttle services around Mombasa.",
-        "location": "Mombasa",
-        "category": "Transport",
-        "contact": "0721000002"
-      },
-      {
-        "id": 3,
-        "name": "Eldoret Mart",
-        "logo": "https://example.com/eldoretmart-logo.png",
-        "rating": 4,
-        "description": "Your go-to spot for household essentials and electronics.",
-        "location": "Eldoret",
-        "category": "Retail",
-        "contact": "0721000003"
-      },
-      {
-        "id": 4,
-        "name": "Kisumu Kicks",
-        "logo": "https://example.com/kisumukicks-logo.png",
-        "rating": 3,
-        "description": "Trendy apparel and footwear for all ages.",
-        "location": "Kisumu",
-        "category": "Apparel",
-        "contact": "0721000004"
-      },
-      {
-        "id": 5,
-        "name": "Nakuru Nibbles",
-        "logo": "https://example.com/nakurunibbles-logo.png",
-        "rating": 5,
-        "description": "Delicious snacks and beverages in the heart of Nakuru.",
-        "location": "Nakuru",
-        "category": "Food and Beverages",
-        "contact": "0721000005"
-      },
-      {
-        "id": 6,
-        "name": "Thika Fashion",
-        "logo": "https://example.com/thikafashion-logo.png",
-        "rating": 4,
-        "description": "Modern fashion store with unique apparel collections.",
-        "location": "Thika",
-        "category": "Apparel",
-        "contact": "0721000006"
-      },
-      {
-        "id": 7,
-        "name": "Meru Fresh Mart",
-        "logo": "https://example.com/merufreshmart-logo.png",
-        "rating": 3,
-        "description": "Fresh produce and groceries for every household.",
-        "location": "Meru",
-        "category": "Retail",
-        "contact": "0721000007"
-      },
-      {
-        "id": 8,
-        "name": "Naivasha Travel",
-        "logo": "https://example.com/naivashatravel-logo.png",
-        "rating": 5,
-        "description": "Quality transport services for tourists and locals.",
-        "location": "Naivasha",
-        "category": "Transport",
-        "contact": "0721000008"
-      },
-      {
-        "id": 9,
-        "name": "Embu Eatery",
-        "logo": "https://example.com/embueatery-logo.png",
-        "rating": 4,
-        "description": "Friendly cafe with local and continental dishes.",
-        "location": "Embu",
-        "category": "Food and Beverages",
-        "contact": "0721000009"
-      },
-      {
-        "id": 10,
-        "name": "Kitale Clothing Co.",
-        "logo": "https://example.com/kitaleclothing-logo.png",
-        "rating": 3,
-        "description": "Stylish clothing for men, women, and children.",
-        "location": "Kitale",
-        "category": "Apparel",
-        "contact": "0721000010"
-      },
-      {
-        "id": 11,
-        "name": "Kericho Essentials",
-        "logo": "https://example.com/kerichoessentials-logo.png",
-        "rating": 4,
-        "description": "General store with everything you need.",
-        "location": "Kericho",
-        "category": "Retail",
-        "contact": "0721000011"
-      },
-      {
-        "id": 12,
-        "name": "Nanyuki Logistics",
-        "logo": "https://example.com/nanyukilogistics-logo.png",
-        "rating": 5,
-        "description": "Efficient transport services for urban and rural routes.",
-        "location": "Nanyuki",
-        "category": "Transport",
-        "contact": "0721000012"
-      },
-      {
-        "id": 13,
-        "name": "Machakos Deli",
-        "logo": "https://example.com/machakosdeli-logo.png",
-        "rating": 4,
-        "description": "Charming deli with a range of tasty foods and beverages.",
-        "location": "Machakos",
-        "category": "Food and Beverages",
-        "contact": "0721000013"
-      },
-      {
-        "id": 14,
-        "name": "Voi Outfitters",
-        "logo": "https://example.com/voioutfitters-logo.png",
-        "rating": 5,
-        "description": "High-quality apparel for every occasion.",
-        "location": "Voi",
-        "category": "Apparel",
-        "contact": "0721000014"
-      },
-      {
-        "id": 15,
-        "name": "Malindi Mini Mart",
-        "logo": "https://example.com/malindiminimart-logo.png",
-        "rating": 3,
-        "description": "Convenient store with essentials and household items.",
-        "location": "Malindi",
-        "category": "Retail",
-        "contact": "0721000015"
-      }
-    ]
-  }
+  "businesses": [
+    {
+      "id": "1",
+      "name": "Nairobi Bites",
+      "logo": "https://example.com/nairobibites-logo.png",
+      "description": "Popular eatery offering local and international cuisine.",
+      "location": "Nairobi",
+      "category": "Food and Beverages",
+      "contact": "0721000001"
+    },
+    {
+      "id": "2",
+      "name": "Mombasa Transport Hub",
+      "logo": "https://example.com/mtransport-logo.png",
+      "description": "Reliable taxi and shuttle services around Mombasa.",
+      "location": "Mombasa",
+      "category": "Transport",
+      "contact": "0721000002"
+    },
+    {
+      "id": "3",
+      "name": "Eldoret Mart",
+      "logo": "https://example.com/eldoretmart-logo.png",
+      "description": "Your go-to spot for household essentials and electronics.",
+      "location": "Eldoret",
+      "category": "Retail",
+      "contact": "0721000003"
+    },
+    {
+      "id": "4",
+      "name": "Kisumu Kicks",
+      "logo": "https://example.com/kisumukicks-logo.png",
+      "description": "Trendy apparel and footwear for all ages.",
+      "location": "Kisumu",
+      "category": "Apparel",
+      "contact": "0721000004"
+    },
+    {
+      "id": "5",
+      "name": "Nakuru Nibbles",
+      "logo": "https://example.com/nakurunibbles-logo.png",
+      "description": "Delicious snacks and beverages in the heart of Nakuru.",
+      "location": "Nakuru",
+      "category": "Food and Beverages",
+      "contact": "0721000005"
+    },
+    {
+      "id": "6",
+      "name": "Thika Fashion",
+      "logo": "https://example.com/thikafashion-logo.png",
+      "description": "Modern fashion store with unique apparel collections.",
+      "location": "Thika",
+      "category": "Apparel",
+      "contact": "0721000006"
+    },
+    {
+      "id": "7",
+      "name": "Meru Fresh Mart",
+      "logo": "https://example.com/merufreshmart-logo.png",
+      "description": "Fresh produce and groceries for every household.",
+      "location": "Meru",
+      "category": "Retail",
+      "contact": "0721000007"
+    },
+    {
+      "id": "8",
+      "name": "Naivasha Travel",
+      "logo": "https://example.com/naivashatravel-logo.png",
+      "description": "Quality transport services for tourists and locals.",
+      "location": "Naivasha",
+      "category": "Transport",
+      "contact": "0721000008"
+    },
+    {
+      "id": "9",
+      "name": "Embu Eatery",
+      "logo": "https://example.com/embueatery-logo.png",
+      "description": "Friendly cafe with local and continental dishes.",
+      "location": "Embu",
+      "category": "Food and Beverages",
+      "contact": "0721000009"
+    },
+    {
+      "id": "10",
+      "name": "Kitale Clothing Co.",
+      "logo": "https://example.com/kitaleclothing-logo.png",
+      "description": "Stylish clothing for men, women, and children.",
+      "location": "Kitale",
+      "category": "Apparel",
+      "contact": "0721000010"
+    },
+    {
+      "id": "11",
+      "name": "Kericho Essentials",
+      "logo": "https://example.com/kerichoessentials-logo.png",
+      "description": "General store with everything you need.",
+      "location": "Kericho",
+      "category": "Retail",
+      "contact": "0721000011"
+    },
+    {
+      "id": "12",
+      "name": "Nanyuki Logistics",
+      "logo": "https://example.com/nanyukilogistics-logo.png",
+      "description": "Efficient transport services for urban and rural routes.",
+      "location": "Nanyuki",
+      "category": "Transport",
+      "contact": "0721000012"
+    },
+    {
+      "id": "13",
+      "name": "Machakos Deli",
+      "logo": "https://example.com/machakosdeli-logo.png",
+      "description": "Charming deli with a range of tasty foods and beverages.",
+      "location": "Machakos",
+      "category": "Food and Beverages",
+      "contact": "0721000013"
+    },
+    {
+      "id": "14",
+      "name": "Voi Outfitters",
+      "logo": "https://example.com/voioutfitters-logo.png",
+      "description": "High-quality apparel for every occasion.",
+      "location": "Voi",
+      "category": "Apparel",
+      "contact": "0721000014"
+    },
+    {
+      "id": "15",
+      "name": "Malindi Mini Mart",
+      "logo": "https://example.com/malindiminimart-logo.png",
+      "description": "Convenient store with essentials and household items.",
+      "location": "Malindi",
+      "category": "Retail",
+      "contact": "0721000015"
+    },
+    {
+      "id": "d726",
+      "name": "Kookito",
+      "logo": "https://example.com/nairobibites-logo.png",
+      "description": "Good food",
+      "location": "Nairobi",
+      "category": "Food",
+      "contact": "0795439412"
+    },
+    {
+      "id": "f2ab",
+      "name": "Kookito",
+      "logo": "https://example.com/nairobibites-logo.png",
+      "description": "Good food",
+      "location": "Nairobi",
+      "category": "Food",
+      "contact": "0795439412"
+    }
+  ]
+}
