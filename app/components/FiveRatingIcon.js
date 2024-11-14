@@ -75,7 +75,7 @@ export default function FiveSegmentRating({ initialRating = 0, businessId }) {
 
   return (
     <div className="text-center mt-5">
-      <h3 className="text-lg font-semibold">Rate</h3>
+      <h3 className="text-lg font-semibold text-black text-wrap" >Rate Us!</h3>
       <div className="relative w-24 h-36 mx-auto mt-4">
         {/* Top horizontal line (Rating 5) */}
         <div

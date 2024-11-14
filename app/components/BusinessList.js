@@ -1,5 +1,4 @@
-"use client";
-
+"use client"
 import { useEffect, useState } from "react";
 import BusinessCard from "./BusinessCard";
 import Toolbar from "./ToolBar";
@@ -8,7 +7,7 @@ export default function BusinessesList() {
   const [businesses, setBusinesses] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
   const [categoryFilter, setCategoryFilter] = useState("");
-  const [sortOption, setSortOption] = useState("popularity");
+  const [sortOption, setSortOption] = useState("alphabetical");
 
   useEffect(() => {
     fetch("http://localhost:3001/businesses")
@@ -26,15 +25,15 @@ export default function BusinessesList() {
           if (!res.ok) {
             throw new Error("Failed to delete business.");
           }
-          // Update the state by removing the deleted business using the spread operator
-          setBusinesses((prevBusinesses) => [...prevBusinesses.filter((business) => business.id !== id)]);
+          setBusinesses((prevBusinesses) =>
+            prevBusinesses.filter((business) => business.id !== id)
+          );
           alert("Business deleted successfully");
         })
         .catch((error) => alert(error.message));
     }
   };
 
-  // Filtering and Sorting Logic (remains the same)
   const filteredBusinesses = categoryFilter
     ? businesses.filter((business) => business.category === categoryFilter)
     : businesses;
@@ -46,34 +45,34 @@ export default function BusinessesList() {
     : filteredBusinesses;
 
   const sortedBusinesses = [...searchedBusinesses].sort((a, b) => {
-    if (sortOption === "popularity") return b.popularity - a.popularity;
-    if (sortOption === "averageRating") return b.averageRating- a.averageRating;
+    if (sortOption === "rating") {
+      return b.averageRating - a.averageRating;
+    } else if (sortOption === "alphabetical") {
+      return a.name.localeCompare(b.name);
+    }
     return 0;
   });
 
   return (
-    <>
-      <div className="bg-[#C6D3BC]">
-        <Toolbar
-          searchQuery={searchQuery}
-          setSearchQuery={setSearchQuery}
-          categoryFilter={categoryFilter}
-          setCategoryFilter={setCategoryFilter}
-          sortOption={sortOption}
-          setSortOption={setSortOption}
-        />
+    <div className="bg-[#C6D3BC]">
+      <Toolbar
+        searchQuery={searchQuery}
+        setSearchQuery={setSearchQuery}
+        categoryFilter={categoryFilter}
+        setCategoryFilter={setCategoryFilter}
+        sortOption={sortOption}
+        setSortOption={setSortOption}
+      />
 
-        <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
-          {sortedBusinesses.map((business) => (
-            <BusinessCard
-              key={business.id}
-              business={business}
-              onDeleteBusiness={() => deleteBusiness(business.id)} // Pass delete function with business id
-            />
-          ))}
-        </ul>
-      </div>
-    </>
+      <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
+        {sortedBusinesses.map((business) => (
+          <BusinessCard
+            key={business.id}
+            business={business}
+            onDeleteBusiness={() => deleteBusiness(business.id)}
+          />
+        ))}
+      </ul>
+    </div>
   );
 }
-
