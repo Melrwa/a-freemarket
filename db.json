@@ -1,155 +1,254 @@
 {
-    "businesses": [
-      {
-        "id": 1,
-        "name": "Nairobi Bites",
-        "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731466270/food-and-drink-logo-plate-with-wine-glass-vector-33655938_xux3wa.jpg",
-        "rating": 4,
-        "description": "Popular eatery offering local and international cuisine.",
-        "location": "Nairobi",
-        "category": "Food and Beverages",
-        "contact": "0721000001"
-      },
-      {
-        "id": 2,
-        "name": "Mombasa Transport Hub",
-        "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731466125/ccbc1e62c7108c465a74efdc2496defa_tvn6ey.jpg",
-        "rating": 5,
-        "description": "Reliable taxi and shuttle services around Mombasa.",
-        "location": "Mombasa",
-        "category": "Transport",
-        "contact": "0721000002"
-      },
-      {
-        "id": 3,
-        "name": "Eldoret Mart",
-        "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731466127/shop-local-small-business-logo-icon-buy-support-community-216170697_uwuqna.jpg",
-        "rating": 4,
-        "description": "Your go-to spot for household essentials and electronics.",
-        "location": "Eldoret",
-        "category": "Retail",
-        "contact": "0721000003"
-      },
-      {
-        "id": 4,
-        "name": "Kisumu Kicks",
-        "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731466182/clothing-store-logo-design-inspiration-600nw-2104754999_wwghdu.jpg",
-        "rating": 3,
-        "description": "Trendy apparel and footwear for all ages.",
-        "location": "Kisumu",
-        "category": "Apparel",
-        "contact": "0721000004"
-      },
-      {
-        "id": 5,
-        "name": "Nakuru Nibbles",
-        "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731466271/food-and-beverage-logo-template-design-231dbfe52a8f511a7e1c4fae296e8fb7_screen_mkcg4s.jpg",
-        "rating": 5,
-        "description": "Delicious snacks and beverages in the heart of Nakuru.",
-        "location": "Nakuru",
-        "category": "Food and Beverages",
-        "contact": "0721000005"
-      },
-      {
-        "id": 6,
-        "name": "Thika Fashion",
-        "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731466183/clothing-logo-design-women-boutique-logo-vector_y7kx2x.jpg",
-        "rating": 4,
-        "description": "Modern fashion store with unique apparel collections.",
-        "location": "Thika",
-        "category": "Apparel",
-        "contact": "0721000006"
-      },
-      {
-        "id": 7,
-        "name": "Meru Fresh Mart",
-        "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731466126/wdecal_bizreopen_06_white_yzc94x.png",
-        "rating": 3,
-        "description": "Fresh produce and groceries for every household.",
-        "location": "Meru",
-        "category": "Retail",
-        "contact": "0721000007"
-      },
-      {
-        "id": 8,
-        "name": "Naivasha Travel",
-        "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731466750/black-white-transportation-icon-illustration-logo-vector_sliivf.jpg",
-        "rating": 5,
-        "description": "Quality transport services for tourists and locals.",
-        "location": "Naivasha",
-        "category": "Transport",
-        "contact": "0721000008"
-      },
-      {
-        "id": 9,
-        "name": "Embu Eatery",
-        "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731466272/meal-breaks-vector-line-icon-simple-thin-line-icon-premium-quality-design-element_ondqhy.jpg",
-        "rating": 4,
-        "description": "Friendly cafe with local and continental dishes.",
-        "location": "Embu",
-        "category": "Food and Beverages",
-        "contact": "0721000009"
-      },
-      {
-        "id": 10,
-        "name": "Kitale Clothing Co.",
-        "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731466182/clothing-store-logo-design-inspiration-600nw-2104754999_wwghdu.jpg",
-        "rating": 3,
-        "description": "Stylish clothing for men, women, and children.",
-        "location": "Kitale",
-        "category": "Apparel",
-        "contact": "0721000010"
-      },
-      {
-        "id": 11,
-        "name": "Kericho Essentials",
-        "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731466127/shop-local-small-business-logo-icon-buy-support-community-216170697_uwuqna.jpg",
-        "rating": 4,
-        "description": "General store with everything you need.",
-        "location": "Kericho",
-        "category": "Retail",
-        "contact": "0721000011"
-      },
-      {
-        "id": 12,
-        "name": "Nanyuki Logistics",
-        "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731466750/minimalist-logistics-transportation-logo-vector-modern-stylish-design-high-resolution_1273060-16_j5ob2t.jpg",
-        "rating": 5,
-        "description": "Efficient transport services for urban and rural routes.",
-        "location": "Nanyuki",
-        "category": "Transport",
-        "contact": "0721000012"
-      },
-      {
-        "id": 13,
-        "name": "Machakos Deli",
-        "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731466273/food-beverage_gwdthx.png",
-        "rating": 4,
-        "description": "Charming deli with a range of tasty foods and beverages.",
-        "location": "Machakos",
-        "category": "Food and Beverages",
-        "contact": "0721000013"
-      },
-      {
-        "id": 14,
-        "name": "Voi Outfitters",
-        "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731466183/clothing-logo-design-women-boutique-logo-vector_y7kx2x.jpg",
-        "rating": 5,
-        "description": "High-quality apparel for every occasion.",
-        "location": "Voi",
-        "category": "Apparel",
-        "contact": "0721000014"
-      },
-      {
-        "id": 15,
-        "name": "Malindi Mini Mart",
-        "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731466126/wdecal_bizreopen_06_white_yzc94x.png",
-        "rating": 3,
-        "description": "Convenient store with essentials and household items.",
-        "location": "Malindi",
-        "category": "Retail",
-        "contact": "0721000015"
-      }
-    ]
-  }
-  
+  "businesses": [
+    {
+      "id": "1",
+      "name": "Nairobi Bites",
+      "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731466270/food-and-drink-logo-plate-with-wine-glass-vector-33655938_xux3wa.jpg",
+      "backgroundImage": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731512298/enjoying-a-brunch-together_ngzakp.jpg",
+      "ratings": [
+        3,
+        2,
+        5,
+        2,
+        3,
+        1,
+        2,
+        5
+      ],
+      "averageRating": 3,
+      "description": "Popular eatery offering local and international cuisine.",
+      "location": "Nairobi",
+      "category": "Food and Beverages",
+      "contact": "0721000001",
+      "services": [
+        "Lunch",
+        "Dinner",
+        "Takeaway",
+        "Delivery",
+        "Catering",
+        "Drinks",
+        "Vegetarian Options",
+        "Family-friendly",
+        "Event Hosting",
+        "Outdoor Seating"
+      ],
+      "promotionalMessage": "Enjoy a 10% discount on your first order when you visit us!"
+    },
+    {
+      "id": "3",
+      "name": "Eldoret Mart",
+      "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731466127/shop-local-small-business-logo-icon-buy-support-community-216170697_uwuqna.jpg",
+      "backgroundImage": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731512505/supermarket_hisano-1430x794_sg32w4.jpg",
+      "ratings": [
+        3,
+        3,
+        5,
+        3,
+        3,
+        5
+      ],
+      "averageRating": 4,
+      "description": "Your go-to spot for household essentials and electronics.",
+      "location": "Eldoret",
+      "category": "Retail",
+      "contact": "0721000003",
+      "services": [
+        "Electronics",
+        "Groceries",
+        "Cleaning Supplies",
+        "Furniture",
+        "Toys",
+        "Stationery",
+        "Mobile Phones",
+        "Kitchenware",
+        "Bedding",
+        "Home Decor"
+      ],
+      "promotionalMessage": "Special offer: Buy 2 get 1 free on selected electronics!"
+    },
+    {
+      "id": "4",
+      "name": "Kisumu Kicks",
+      "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731466182/clothing-store-logo-design-inspiration-600nw-2104754999_wwghdu.jpg",
+      "backgroundImage": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731512882/shoe-store-new-3_mdahxi.jpg",
+      "ratings": [
+        3
+      ],
+      "averageRating": 3,
+      "description": "Trendy apparel and footwear for all ages.",
+      "location": "Kisumu",
+      "category": "Apparel",
+      "contact": "0721000004",
+      "services": [
+        "Men's Apparel",
+        "Women's Apparel",
+        "Children's Clothing",
+        "Footwear",
+        "Accessories",
+        "Fashionable Outerwear",
+        "Sportswear",
+        "Seasonal Trends",
+        "Sale Items",
+        "Personal Styling"
+      ],
+      "promotionalMessage": "Up to 50% off on selected footwear this weekend!"
+    },
+    {
+      "id": "5",
+      "name": "Nakuru Nibbles",
+      "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731466271/food-and-beverage-logo-template-design-231dbfe52a8f511a7e1c4fae296e8fb7_screen_mkcg4s.jpg",
+      "backgroundImage": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731512299/9dfaeda73538877faf9c927ec8c8d6863c2c2111-4800x3200_am5qzx.jpg",
+      "ratings": [
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "averageRating": 1,
+      "description": "Delicious snacks and beverages in the heart of Nakuru.",
+      "location": "Nakuru",
+      "category": "Food and Beverages",
+      "contact": "0721000005",
+      "services": [
+        "Cakes",
+        "Coffee",
+        "Smoothies",
+        "Snacks",
+        "Beverages",
+        "Breakfast",
+        "Ice Cream",
+        "Pastries",
+        "Vegan Options",
+        "Kids' Menu"
+      ],
+      "promotionalMessage": "Get a free drink with every purchase of a pastry!"
+    },
+    {
+      "id": "6",
+      "name": "Thika Fashion",
+      "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731466183/clothing-logo-design-women-boutique-logo-vector_y7kx2x.jpg",
+      "backgroundImage": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731512572/DSC_6505_fjhzpc.jpg",
+      "ratings": [
+        3,
+        5,
+        2,
+        1,
+        3,
+        5,
+        4,
+        5
+      ],
+      "averageRating": 4,
+      "description": "Modern fashion store with unique apparel collections.",
+      "location": "Thika",
+      "category": "Apparel",
+      "contact": "0721000006",
+      "services": [
+        "Ladies' Apparel",
+        "Formal Wear",
+        "Casual Wear",
+        "Footwear",
+        "Accessories",
+        "Bags",
+        "Jewelry",
+        "Handmade Designs",
+        "Bridal Wear",
+        "Personalized Styling"
+      ],
+      "promotionalMessage": "Exclusive sale: 30% off on all new arrivals!"
+    },
+    {
+      "id": "7",
+      "name": "Meru Fresh Mart",
+      "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731466126/wdecal_bizreopen_06_white_yzc94x.png",
+      "backgroundImage": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731512503/booth-branding-business-buy-264636-scaled-2_vy5dln.jpg",
+      "ratings": [
+        3,
+        5,
+        3,
+        4,
+        3,
+        4,
+        1
+      ],
+      "averageRating": 3,
+      "description": "Fresh produce and groceries for every household.",
+      "location": "Meru",
+      "category": "Retail",
+      "contact": "0721000007",
+      "services": [
+        "Fresh Fruits",
+        "Vegetables",
+        "Meat and Poultry",
+        "Dairy Products",
+        "Canned Goods",
+        "Beverages",
+        "Spices",
+        "Organic Products",
+        "Frozen Foods",
+        "Bakery"
+      ],
+      "promotionalMessage": "Fresh deals every week - check out our weekly flyer!"
+    },
+    {
+      "id": "8",
+      "name": "Naivasha Travel",
+      "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731466750/black-white-transportation-icon-illustration-logo-vector_sliivf.jpg",
+      "backgroundImage": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731511496/1701631396191_xtdbni.jpg",
+      "ratings": [
+        3,
+        1,
+        5
+      ],
+      "averageRating": 3,
+      "description": "Quality transport services for tourists and locals.",
+      "location": "Naivasha",
+      "category": "Transport",
+      "contact": "0721000008",
+      "services": [
+        "Tourist Transfers",
+        "Airport Pickup",
+        "Local Transport",
+        "Private Hire",
+        "Group Tours",
+        "Car Rentals",
+        "Event Transportation",
+        "School Bus Services",
+        "Corporate Transport",
+        "Shuttle Services"
+      ],
+      "promotionalMessage": "Get 10% off your first trip when you book online!"
+    },
+    {
+      "id": "9",
+      "name": "Embu Eatery",
+      "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731466272/meal-breaks-vector-line-icon-simple-thin-line-icon-premium-quality-design-element_ondqhy.jpg",
+      "backgroundImage": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731512299/Hamburger-and-french-fries-paper-box_l5ula7.jpg",
+      "ratings": [
+        3,
+        5
+      ],
+      "averageRating": 4,
+      "description": "Friendly cafe with local and continental dishes.",
+      "location": "Embu",
+      "category": "Food and Beverages",
+      "contact": "0721000009",
+      "services": [
+        "Breakfast",
+        "Lunch",
+        "Dinner",
+        "Cakes",
+        "Coffee",
+        "Tea",
+        "Vegetarian Options",
+        "Smoothies",
+        "Takeaway",
+        "Delivery"
+      ],
+      "promotionalMessage": "Free coffee with every breakfast meal!"
+    }
+  ]
+}
