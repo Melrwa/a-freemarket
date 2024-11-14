@@ -4,6 +4,7 @@ import { Roboto } from "next/font/google";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapPin, faDumbbell, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 const roboto = Roboto({
   weight: ['100', '300', '400', '500', '700', '900'],
@@ -60,9 +61,10 @@ export default function Home() {
 
 
       <div className="h-auto bg-[#C6D3BC] p-12">
-        <h1 className="font-serif text-[24px] mb-4">Top trending businesses</h1>
+        <h1 className="font-serif text-[24px] mb-4">Top trending businesses: <Link href="/businesses" className="hover:bg-[#336633] hover:rounded-[12px] hover:text-white p-2 transition-all text-[20px]">See more</Link>
+        </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          
+
 
           <div className="max-w-sm bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
             {/* Business Logo */}
