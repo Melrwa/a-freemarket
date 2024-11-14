@@ -5,17 +5,20 @@ import { useState } from 'react';
 const AddBusiness = () => {
   const [name, setName] = useState('');
   const [logo, setLogo] = useState('');
+  const [bg, setbg] = useState('');
   const [description, setDescription] = useState('');
+  const [services, setServices] = useState([])
   const [location, setLocation] = useState('');
   const [category, setCategory] = useState('');
   const [contact, setContact] = useState('');
+  const [rating, setRating] = useState([])
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   // const router = useRouter();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    setRating([, 0])
     const business = {
       name,
       logo,
@@ -23,6 +26,8 @@ const AddBusiness = () => {
       location,
       category,
       contact,
+      services,
+      rating
     };
     console.log(business)
     setLoading(true);
@@ -54,10 +59,11 @@ const AddBusiness = () => {
     setLocation("");
     setCategory("");
     setContact("");
+    setServices([])
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-white p-4">
+    <div className="flex justify-center items-center min-h-screen bg-white p-4 mt-[64px]">
       <div className="w-full sm:w-3/4 md:w-1/2 lg:w-1/3 bg-white rounded-xl shadow-xl p-8">
         <h2 className="text-3xl font-semibold text-center text-green-600 mb-6">Add Your Business</h2>
         <form onSubmit={handleSubmit} className="space-y-6">
@@ -86,6 +92,17 @@ const AddBusiness = () => {
               className="w-full mt-2 p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-300 bg-white text-gray-800"
             />
           </div>
+          <div>
+            <label htmlFor="bg" className="block text-lg text-gray-800">Background URL</label>
+            <input
+              type="url"
+              id="bg"
+              value={bg}
+              onChange={(e) => setbg(e.target.value)}
+              required
+              className="w-full mt-2 p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-300 bg-white text-gray-800"
+            />
+          </div>
 
           <div>
             <label htmlFor="description" className="block text-lg text-gray-800">Description</label>
@@ -93,6 +110,22 @@ const AddBusiness = () => {
               id="description"
               value={description}
               onChange={(e) => setDescription(e.target.value)}
+              required
+              className="w-full mt-2 p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-300 bg-white text-gray-800"
+            />
+          </div>
+
+          <div>
+            <label htmlFor="services" className="block text-lg text-gray-800">Services</label>
+            <input
+              type="text"
+              id="services"
+              value={services}
+              onChange={(e) => {
+                const input = e.target.value;
+                const wordArray = input.split(',').map(word => word.trim()); // Trim to remove extra spaces
+                setServices(wordArray);
+              }}
               required
               className="w-full mt-2 p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-300 bg-white text-gray-800"
             />
