@@ -1,35 +1,38 @@
 "use client";
 import { useState } from 'react';
-// import { useRouter } from 'next/router';
 
 const AddBusiness = () => {
   const [name, setName] = useState('');
   const [logo, setLogo] = useState('');
-  const [bg, setbg] = useState('');
+  const [backgroundImage, setBackgroundImage] = useState('');
   const [description, setDescription] = useState('');
-  const [services, setServices] = useState([])
+  const [services, setServices] = useState([]);
   const [location, setLocation] = useState('');
   const [category, setCategory] = useState('');
   const [contact, setContact] = useState('');
-  const [rating, setRating] = useState([])
+  const [ratings, setRatings] = useState([0]); // Placeholder for initial rating
+  const [averageRating, setAverageRating] = useState(0);
+  const [promotionalMessage, setPromotionalMessage] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-  // const router = useRouter();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setRating([, 0])
     const business = {
+      id: Date.now().toString(),
       name,
       logo,
+      backgroundImage,
       description,
       location,
       category,
       contact,
       services,
-      rating
+      ratings,
+      averageRating,
+      promotionalMessage
     };
-    console.log(business)
+
     setLoading(true);
     setError(null);
 
@@ -44,7 +47,18 @@ const AddBusiness = () => {
 
       if (res.ok) {
         alert('Business added successfully!');
-        // router.push('/search');
+        // Reset fields after successful submission
+        setName('');
+        setLogo('');
+        setBackgroundImage('');
+        setDescription('');
+        setLocation('');
+        setCategory('');
+        setContact('');
+        setServices([]);
+        setPromotionalMessage('');
+        setRatings([0]);
+        setAverageRating(0);
       } else {
         throw new Error('Failed to add business');
       }
@@ -53,13 +67,6 @@ const AddBusiness = () => {
     } finally {
       setLoading(false);
     }
-    setName("");
-    setLogo("");
-    setDescription("");
-    setLocation("");
-    setCategory("");
-    setContact("");
-    setServices([])
   };
 
   return (
@@ -92,13 +99,14 @@ const AddBusiness = () => {
               className="w-full mt-2 p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-300 bg-white text-gray-800"
             />
           </div>
+
           <div>
-            <label htmlFor="bg" className="block text-lg text-gray-800">Background URL</label>
+            <label htmlFor="backgroundImage" className="block text-lg text-gray-800">Background Image URL</label>
             <input
               type="url"
-              id="bg"
-              value={bg}
-              onChange={(e) => setbg(e.target.value)}
+              id="backgroundImage"
+              value={backgroundImage}
+              onChange={(e) => setBackgroundImage(e.target.value)}
               required
               className="w-full mt-2 p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-300 bg-white text-gray-800"
             />
@@ -116,14 +124,14 @@ const AddBusiness = () => {
           </div>
 
           <div>
-            <label htmlFor="services" className="block text-lg text-gray-800">Services</label>
+            <label htmlFor="services" className="block text-lg text-gray-800">Services (comma-separated)</label>
             <input
               type="text"
               id="services"
-              value={services}
+              value={services.join(', ')}
               onChange={(e) => {
                 const input = e.target.value;
-                const wordArray = input.split(',').map(word => word.trim()); // Trim to remove extra spaces
+                const wordArray = input.split(',').map(word => word.trim());
                 setServices(wordArray);
               }}
               required
@@ -163,6 +171,17 @@ const AddBusiness = () => {
               value={contact}
               onChange={(e) => setContact(e.target.value)}
               required
+              className="w-full mt-2 p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-300 bg-white text-gray-800"
+            />
+          </div>
+
+          <div>
+            <label htmlFor="promotionalMessage" className="block text-lg text-gray-800">Promotional Message</label>
+            <input
+              type="text"
+              id="promotionalMessage"
+              value={promotionalMessage}
+              onChange={(e) => setPromotionalMessage(e.target.value)}
               className="w-full mt-2 p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-300 bg-white text-gray-800"
             />
           </div>
