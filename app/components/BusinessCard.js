@@ -30,9 +30,6 @@ export default function BusinessCard({ business, onDeleteBusiness }) {
       <em className="block text-center text-green-600 font-semibold text-sm mb-4">{business.category}</em>
 
       <div className="flex justify-between">
-        <Link href={`/business/${business.id}`} className="text-green-500 hover:text-green-600 font-semibold">
-          View Details
-        </Link>
         <button
           onClick={onDeleteBusiness}
           style={{ backgroundColor: "#8B5E3C" }}

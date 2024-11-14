@@ -318,6 +318,33 @@
       ],
       "averageRating": 4,
       "promotionalMessage": "Mboga ni tamu"
+    },
+    {
+      "id": "1731610969612",
+      "name": "Foody Palace",
+      "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731512300/17tootired-grilled-cheese-articleLarge_tpe6da.jpg",
+      "backgroundImage": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731512299/image_knhfa9.webp",
+      "description": "Sweetest food around Nairobi ",
+      "location": "Nairobi Utawala",
+      "category": "Food ",
+      "contact": "07737382992",
+      "services": [
+        "Fish",
+        "Ugalii",
+        "Smocha",
+        "Fries",
+        ""
+      ],
+      "ratings": [
+        0,
+        3,
+        5,
+        2,
+        3,
+        4
+      ],
+      "averageRating": 3,
+      "promotionalMessage": "We offer delivery around Nairobi"
     }
   ]
 }
