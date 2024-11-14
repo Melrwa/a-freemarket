@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AFreeMarket
 
-## Getting Started
+## A Platform Connecting Businesses
 
-First, run the development server:
+**AFreeMarket** is a web application that allows users to browse, rate and search for local businesses. It is built primarily with Next.js, a React framework, styled with tailwindcss, and uses JSON Server as a backend.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Among the features include:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 1. Business Database
+Users can search for businesses listed and curate by name, category, location and ratings.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 2. Sort and Filter Options
+Sort businesses alphabetically or by rating.
 
-## Learn More
+### 3. Top-Rated Businesses
+Viwe a list of the top trending businesses to find popular choices quickly.
 
-To learn more about Next.js, take a look at the following resources:
+### 4. Detailed Business View
+Each listing provides in-depth details, including contacts, ratings and services offered.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 5. Responsive Design
+A seamless experience on mobile and desktop.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 6. Business Submission
+Users can add their own businesses to the database.
 
-## Deploy on Vercel
+### 7. Rating System
+Rate and review businesses to help others make informed decisions.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Technologies
+- **Frontend**: Next.js, Tailwind CSS, FontAwesome
+-**Backend**: JSON Server (to simulate RESTful API)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Installation
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/Melrwa/a-freemarket
+    ```
+
+2. Install dependencies: 
+
+    ```bash
+    npm i
+    # or
+    pnpm i
+    ```
+
+3. Start JSON Server:
+
+    ```bash
+    npm run server
+    # or
+    pnpm run server
+    # or
+    json-server --watch db.json --port 3000
+    # last option: ensure json-server is installed 
+    ```
+
+4. Run app:
+
+    ```bash
+    npm run dev
+    # or
+    pnpm dev
+    ```
+
+## Git Collaborators
+
+This project was developed by [Melkizedek Orwa](https://github.com/Melrwa), [Jeremy Akanle](https://github.com/jere-eee) and [Brian Mkala](https://github.com/KesiBrian).
+
+## License
+The project is licensed under the MIT License.
