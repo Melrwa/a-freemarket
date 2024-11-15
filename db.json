@@ -237,7 +237,11 @@
       "backgroundImage": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731512299/Hamburger-and-french-fries-paper-box_l5ula7.jpg",
       "ratings": [
         3,
-        5
+        5,
+        3,
+        4,
+        5,
+        3
       ],
       "averageRating": 4,
       "description": "Friendly cafe with local and continental dishes.",
@@ -341,9 +345,14 @@
         5,
         2,
         3,
-        4
+        4,
+        5,
+        4,
+        5,
+        4,
+        5
       ],
-      "averageRating": 3,
+      "averageRating": 4,
       "promotionalMessage": "We offer delivery around Nairobi"
     }
   ]
