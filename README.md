@@ -32,6 +32,7 @@ Rate and review businesses to help others make informed decisions.
 ## Technologies
 - **Frontend**: Next.js, Tailwind CSS, FontAwesome
 -**Backend**: JSON Server (to simulate RESTful API)
+## Livelink [AfreeMarket](https://a-freemarket.vercel.app/)
 
 ## Installation
 
