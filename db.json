@@ -53,9 +53,13 @@
         3,
         4,
         3,
-        3
+        3,
+        3,
+        5,
+        3,
+        2
       ],
-      "averageRating": 4,
+      "averageRating": 3,
       "description": "Your go-to spot for household essentials and electronics.",
       "location": "Eldoret",
       "category": "Retail",
@@ -263,67 +267,6 @@
       "promotionalMessage": "Free coffee with every breakfast meal!"
     },
     {
-      "id": "1731606161715",
-      "name": "Acacia Tech",
-      "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731603439/canva-blue-and-white-modern-technology-company-logo-fAFQqyuW2Co_ivcjbp.jpg",
-      "backgroundImage": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731603401/tech-devices-icons-connected-digital-planet-earth_wgldjm.jpg",
-      "description": "Tech Africa ",
-      "location": "Mombasa",
-      "category": "Technology ",
-      "contact": "0788383837",
-      "services": [
-        "Softwares",
-        "Wifi-Installation",
-        "CCTV installation",
-        "Sells-Laptop",
-        "Sell-Router"
-      ],
-      "ratings": [
-        0,
-        1,
-        3,
-        3,
-        5,
-        4,
-        3
-      ],
-      "averageRating": 3,
-      "promotionalMessage": "Solution is here "
-    },
-    {
-      "id": "1731606350228",
-      "name": "Mama Mboga ",
-      "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731603439/canva-blue-and-white-modern-technology-company-logo-fAFQqyuW2Co_ivcjbp.jpg",
-      "backgroundImage": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731603401/tech-devices-icons-connected-digital-planet-earth_wgldjm.jpg",
-      "description": "Selling Fresh vegatables ",
-      "location": "Nairobi",
-      "category": "Food",
-      "contact": "0788383837",
-      "services": [
-        "Tomatoes",
-        "kales",
-        ""
-      ],
-      "ratings": [
-        0,
-        2,
-        3,
-        4,
-        5,
-        1,
-        3,
-        4,
-        5,
-        4,
-        5,
-        4,
-        5,
-        5
-      ],
-      "averageRating": 4,
-      "promotionalMessage": "Mboga ni tamu"
-    },
-    {
       "id": "1731610969612",
       "name": "Foody Palace",
       "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731512300/17tootired-grilled-cheese-articleLarge_tpe6da.jpg",
@@ -354,6 +297,57 @@
       ],
       "averageRating": 4,
       "promotionalMessage": "We offer delivery around Nairobi"
+    },
+    {
+      "id": "1731644645641",
+      "name": "Waziri Juice base",
+      "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731603439/canva-blue-and-white-modern-technology-company-logo-fAFQqyuW2Co_ivcjbp.jpg",
+      "backgroundImage": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731603401/tech-devices-icons-connected-digital-planet-earth_wgldjm.jpg",
+      "description": "Selling blended juice in Nairobi",
+      "location": "Nairobi",
+      "category": "Food and Beverages",
+      "contact": "0993983983884",
+      "services": [
+        "Orangejuice",
+        "Pineapl",
+        ""
+      ],
+      "ratings": [
+        0,
+        3,
+        4,
+        5,
+        3,
+        4,
+        5
+      ],
+      "averageRating": 3,
+      "promotionalMessage": "it is a suit juice "
+    },
+    {
+      "id": "1731645761546",
+      "name": "Wakubwa Shop",
+      "logo": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731603439/canva-blue-and-white-modern-technology-company-logo-fAFQqyuW2Co_ivcjbp.jpg",
+      "backgroundImage": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731512299/image_knhfa9.webp",
+      "description": "Selling household goods",
+      "location": "Mombasa",
+      "category": "Food and Beverages",
+      "contact": "0993983983884",
+      "services": [
+        "Fish",
+        "Ugalii",
+        "Smocha",
+        "Fries",
+        ""
+      ],
+      "ratings": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "averageRating": 2,
+      "promotionalMessage": "We are here"
     }
   ]
 }
